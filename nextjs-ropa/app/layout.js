@@ -3,9 +3,9 @@ import { Inter } from 'next/font/google'
 import a from "../components/css/bootstrap.min.css"
 import NavBar from '@/components/NavBar'
 import Carrusel from '@/components/Carrusel'
-// import "../../components/css/productos.css"
-// import "../../components/css/slider.css"
-// import "../../components/css/style.css"
+import Intro from '@/components/Intro'
+import Product from '@/components/Product'
+import About from '@/components/About'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +21,9 @@ export default function RootLayout({ children }) {
       <link rel="stylesheet" href={a} ></link>
       <NavBar />
       <Carrusel />
+      <Intro />
+      <Product />
+      <About />
         {children}
         </body>
     </html>

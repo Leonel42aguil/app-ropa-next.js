@@ -1,8 +1,10 @@
 // export default MiComponente;
-import React from 'react'
+import Footer from '@/components/Footer'
 
 export default function page() {
   return (
-    <div>page</div>
+    <div>
+      {/* <Footer /> */} asda
+    </div>
   )
 }

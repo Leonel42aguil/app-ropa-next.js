@@ -6,6 +6,8 @@ import Carrusel from '@/components/Carrusel'
 import Intro from '@/components/Intro'
 import Product from '@/components/Product'
 import About from '@/components/About'
+import Formulario from '@/components/Formulario'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +26,8 @@ export default function RootLayout({ children }) {
       <Intro />
       <Product />
       <About />
+      <Formulario />
+      <Footer />
         {children}
         </body>
     </html>

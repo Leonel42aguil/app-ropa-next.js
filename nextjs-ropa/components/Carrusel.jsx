@@ -1,5 +1,5 @@
-import "../app/css//productos.css"
-// import "../app/css//slider.css"
+import "../app/css/productos.css"
+import "../app/css/slider.css"
 import "../app/css/style.css"
 
 

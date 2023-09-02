@@ -1,14 +1,14 @@
+import "../app/css/productos.css"
+import "../app/css/slider.css"
+import "../app/css/style.css"
 
 export default function NavBar() {
     return ( 
         <div>
-            {/* Código del encabezado con la información de contacto */}
             <header className="bg-danger text-white py-2">
-                <div className="container">
                     <div className="d-flex justify-content-center">
                         <p className="mb-0 fs-4">Contacto +54 9 261 2524 171</p>
                     </div>
-                </div>
             </header>
 
             {/* Código del encabezado con la barra de navegación */}

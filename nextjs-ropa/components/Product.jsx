@@ -1,8 +1,6 @@
-import "../app/css//productos.css"
-// import "../app/css//slider.css"
+import "../app/css/productos.css"
+import "../app/css/slider.css"
 import "../app/css/style.css"
-
-import a from "../public/t-shirt Black.png"
 
 export default function Product () {
   return (

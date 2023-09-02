@@ -1,6 +1,8 @@
-import React from 'react';
+import "../app/css/productos.css"
+import "../app/css/slider.css"
+import "../app/css/style.css"
 
-export default function About() {
+export default function About() { 
   return (
     <section>
       <div id="equipo" className="w-75 m-auto text-center">

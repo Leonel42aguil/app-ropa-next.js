@@ -49,6 +49,32 @@ export default function About() {
           <img src="Images/slider/rightarrow.svg" className="testimony__arrow" id="next" />
         </div>
       </section>
+
+      <div id="local" class="border-top border-3 mt-4">
+              <div class="mapa"></div>
+              <div>
+                <div class="wrapper">
+                  <h2>Ubicado en Mendoza, Argentina</h2>
+                  <h2 class="text-primary mb-4" id="typewriter"></h2>
+                  <p class="fs-5 text-body">Decidimos empezar por donde todo comenzo, nuestras inspiraciones siempre fue donde nos criamos</p>
+
+                  <section class="d-flex" id="numeros-local">
+                    <div>
+                      <p class="text-primary fs-5">248</p>
+                      <p>dias de sol</p>
+                    </div>
+                    <div>
+                      <p class="text-primary fs-5">100%</p>
+                      <p>Aprobado</p>
+                    </div>
+                    <div>
+                      <p class="text-primary fs-5">22'C </p>
+                      <p>Temperatura</p>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
     </section>
   );
 }

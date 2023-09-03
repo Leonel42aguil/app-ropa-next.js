@@ -1,37 +1,6 @@
-/* INDEX.HTML */
+
 body {
     background: linear-gradient(to right, #333, #000);
-    color: #FFF; /* Color de texto principal */
-    font-family: Arial, sans-serif; /* Fuente de texto principal */
+    color: #FFF; 
+    font-family: Arial, sans-serif;
 }
-
-
-/* contenedor */
-.div1{
-    background-color: rgb(255, 0, 0);
-}
-
-/*talles */
-.talle:hover{
-    cursor: pointer;
-}
-
-/* textTarea */
-#Descripcion{
-    resize: none;
-}
-
-/* TABLA */
-.centrado{
-    text-align: center;
-}
-#lista{
-    text-align: center;
-}
-
-/* INPUTS */
-.blanko{
-    background-color: rgb(255, 255, 255);
-}
-
-

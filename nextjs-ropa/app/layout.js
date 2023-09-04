@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <script src="JS/bootstrap.bundle.min.js"></script>
         <script src="JS/slider.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-bzA8Kl8tf2F5hJOT8w7F6s5s5N5b5l5k5l5k5l5l5l5k5l5l5l5l5l5l5l5l5l5" crossorigin="anonymous" />
-        
+
         <NavBar />
         <Carrusel />
         <Intro />

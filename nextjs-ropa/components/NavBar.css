@@ -1,0 +1,61 @@
+/* Estilos para el encabezado fijo */
+#navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    padding: 10px 80px;
+}
+
+/* Estilos para el encabezado fijo */
+#navbar {
+    /* Otros estilos del navbar aquí */
+    z-index: 999; /* Establece un valor alto para mantener el navbar por encima del contenido */
+}
+
+/* Estilos para el Carousel */
+#carouselExampleControls {
+    /* Otros estilos del Carousel aquí */
+    position: relative; /* Asegura que el Carousel no oculte el navbar */
+    z-index: 1; /* Establece un valor para asegurar que el Carousel no esté por encima del navbar */
+}
+
+
+/* Estilos generales del encabezado */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease; /* Agrega una transición suave para el fondo */
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+

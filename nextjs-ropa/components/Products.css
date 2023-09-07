@@ -1,29 +1,37 @@
-.ofert { 
-    padding: 210px 0 0 0;
-    display: flex; 
-    justify-content: space-between;
+/* Contenedor principal de ofertas */
+.ofert {
+    padding: 2cm 0 0 0; /* Ajusta el espaciado superior */
+    display: flex; /* Usa flexbox para alinear los productos en una sola línea */
+    justify-content: space-between; /* Distribuye los productos de manera uniforme */
+    flex-wrap: wrap; /* Permite que los productos se ajusten automáticamente a la línea */
+    gap: 1.5cm; /* Espacio entre los productos */
 }
 
-.ofert-1 { 
-    display: flex;
-    align-items: center;
-    flex-basis: calc(33.3% - 15px);
+/* Estilo para cada oferta individual */
+.ofert-1 {
+    flex-basis: calc(33.3% - 1.5cm); /* Establece el ancho de cada producto */
     background-color: #F5F5F5;
-    padding: 35px;  
+    border: 1px solid #ddd; /* Borde alrededor de cada producto */
+    border-radius: 5px; /* Añade bordes redondeados */
+    box-sizing: border-box; /* Incluye el borde en el ancho total */
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 1.5cm; /* Espaciado interno uniforme */
 }
- 
-.ofert-img { 
-    flex-basis: 50%;
-    margin-right: 15px;
+
+/* Estilo para la imagen de la oferta */
+.ofert-img {
+    text-align: center; /* Centra la imagen horizontalmente */
+    padding: 15px; /* Espaciado interno uniforme */
 }
 
 .ofert-img img {
-    width: 250px;
+    max-width: 100%; /* Asegura que la imagen se ajuste al recuadro */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
+/* Estilo para el texto de la oferta */
 .ofert-text {
-    flex-basis: 50%;
-    text-align: center;
+    padding: 15px; /* Espaciado interno uniforme */
 }
 
 .ofert-text h3 {
@@ -34,6 +42,7 @@
     margin-bottom: 15px;
 }
 
+/* Estilo para el botón */
 .btn-2 {
     display: inline-block;
     padding: 7px 10px;
@@ -41,4 +50,5 @@
     color: white;
     border-radius: 5px;
     font-size: 15px;
+    text-decoration: none; /* Evita subrayado enlaces */
 }

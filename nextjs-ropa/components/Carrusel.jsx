@@ -15,7 +15,7 @@ export default function MyCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://i.pinimg.com/originals/44/2e/34/442e347a3a54a6459ffe331d495557a1.jpg"
+          src="/image/Puma.jpg"
           alt="First slide"
         />
       </Carousel.Item>

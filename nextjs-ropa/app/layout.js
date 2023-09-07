@@ -17,22 +17,26 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <body className={inter.className}>
         <link rel="stylesheet" href={a}></link>
         <script src="JS/bootstrap.bundle.min.js"></script>
         <script src="JS/slider.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-bzA8Kl8tf2F5hJOT8w7F6s5s5N5b5l5k5l5k5l5l5l5k5l5l5l5l5l5l5l5l5l5" crossorigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha384-bzA8Kl8tf2F5hJOT8w7F6s5s5N5b5l5k5l5k5l5l5l5k5l5l5l5l5l5l5l5l5l5"
+          crossorigin="anonymous"
+        />
 
         <NavBar />
         <Carrusel />
         <Intro />
         <Product />
         <About />
-        <Formulario />
-        <Footer />
+        {/* <Formulario /> */}
+        {/* <Footer /> */}
         {children}
       </body>
     </html>

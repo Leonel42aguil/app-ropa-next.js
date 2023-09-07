@@ -1,53 +1,77 @@
-/* Contenedor principal de ofertas */
 .ofert {
-    padding: 2cm 0 0 0; /* Ajusta el espaciado superior */
-    display: flex; /* Usa flexbox para alinear los productos en una sola línea */
-    justify-content: space-between; /* Distribuye los productos de manera uniforme */
-    flex-wrap: wrap; /* Permite que los productos se ajusten automáticamente a la línea */
-    gap: 1cm;  /* Espacio entre los productos */
-}
-
-/* Estilo para cada oferta individual */
-.ofert-1 {
-    flex-basis: calc(33.3% - 1.5cm); /* Establece el ancho de cada producto */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 30px;
+  }
+  
+  .ofert-1 {
+    flex-basis: calc(32% - 10px);
     background-color: #F5F5F5;
-    border: 1px solid #ddd; /* Borde alrededor de cada producto */
-    border-radius: 5px; /* Añade bordes redondeados */
-    box-sizing: border-box; /* Incluye el borde en el ancho total */
-    text-align: center; /* Centra el contenido horizontalmente */
-    padding: 1.5cm; /* Espaciado interno uniforme */
-}
-
-/* Estilo para la imagen de la oferta */
-.ofert-img {
-    text-align: center; /* Centra la imagen horizontalmente */
-}
-
-.ofert-img img {
-    max-width: 100%; /* Asegura que la imagen se ajuste al recuadro */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-height: 200px; /* Establece una altura máxima para la imagen */
-}
-
-.ofert-text {
-    padding: 0; 
-}
-
-.ofert-text h3 {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Agrega posición relativa para elementos hijos posicionados absolutamente */
+    overflow: hidden; /* Oculta elementos hijos que se posicionan absolutamente fuera de este contenedor */
+    transition: transform 0.3s ease; /* Agrega una animación de transición */
+  }
+  
+  /* Estilo para el enlace de compra */
+  .ofert-1 .btn-2 {
+    display: none; /* Oculta inicialmente el enlace de compra */
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición vertical según tus preferencias */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente el enlace */
+  }
+  
+  /* Mostrar el enlace de compra cuando el cursor pasa sobre el contenedor */
+  .ofert-1:hover {
+    transform: scale(1.05); /* Escala el contenedor en un 5% al pasar el cursor */
+  }
+  
+  .ofert-1:hover .btn-2 {
+    display: block; /* Muestra el enlace de compra al pasar el cursor */
+  }
+  
+  .ofert-img {
+    text-align: center;
+  }
+  
+  .ofert-img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  .ofert-text {
+    padding: 0;
+  }
+  
+  .ofert-text h3 {
     color: black;
     font-family: 'Oswald', sans-serif;
-    font-size: 20px; /* Reduce el tamaño del texto */
+    font-size: 18px;
     text-transform: uppercase;
-    margin-bottom: 10px; /* Reduce el margen inferior */
-}
-
-/* Estilo para el botón */
-.btn-2 {
+    margin-bottom: 5px;
+  }
+  
+  .btn-2 {
     display: inline-block;
-    padding: 5px 8px; /* Reduce el padding del botón */
+    padding: 5px 8px;
     background-color: black;
     color: white;
     border-radius: 5px;
-    font-size: 12px; /* Reduce el tamaño del texto del botón */
-    text-decoration: none; /* Evita subrayado enlaces */
-}
+    font-size: 12px;
+    text-decoration: none;
+    transition: opacity 0.3s ease; /* Agrega una transición para suavizar la aparición/desaparición */
+  }
+  
+  /* Suavizar la aparición/desaparición del enlace de compra */
+  .ofert-1:hover .btn-2 {
+    opacity: 1;
+  }
+  

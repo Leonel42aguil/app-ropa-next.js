@@ -56,14 +56,14 @@
 .ofert-1:hover .btn-2 {
   display: block;
   opacity: 1;
-  color: black; /* Cambia el color del texto a negro al pasar el cursor */
+  color: white; /* Cambia el color del texto de la etiqueta <a> a blanco al pasar el cursor */
 }
 
 .ofert-1:hover .ofert-img img {
   filter: grayscale(100%); /* Convierte la imagen en blanco y negro al pasar el cursor */
 }
 
-/* Cambia el color del texto a blanco al pasar el cursor */
+/* Cambia el color del texto en la parte inferior a blanco al pasar el cursor */
 .ofert-1:hover .ofert-text h3 {
   color: white;
 }
@@ -78,81 +78,66 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FORMA BLANCO Y NEGRO PRIMERO */
 /* .ofert {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    margin: 20px;
-  }
-  
-  .ofert-1 {
-    flex-basis: calc(32% - 10px);
-    background-color: #F5F5F5;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .ofert-1 .ofert-img img {
-    max-width: 100%;
-    height: auto;
-    max-height: 200px;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-  }
-  
-  .ofert-1 .btn-2 {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    padding: 11px 15px;
-    font-size: 17px;
-    text-decoration: none;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  .ofert-1:hover {
-    transform: scale(1.05);
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  
-  .ofert-1:hover .btn-2 {
-    display: block;
-    opacity: 1;
-  }
-  
-  .ofert-1:hover .ofert-img img {
-    filter: grayscale(0%);
-  }
-  
-  .ofert-1:hover .btn-2 {
-    color: black;
-  }
-   */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px;
+}
+
+.ofert-1 {
+  flex-basis: calc(32% - 10px);
+  background-color: #F5F5F5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.ofert-1 .ofert-img img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.ofert-1 .btn-2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 11px 15px;
+  font-size: 17px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.ofert-1:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ofert-1:hover .btn-2 {
+  display: block;
+  opacity: 1;
+  color: white;
+}
+
+.ofert-1:hover .ofert-img img {
+  filter: grayscale(0%);
+}
+
+.ofert-1:hover .ofert-text h3 {
+  color: white;
+} */

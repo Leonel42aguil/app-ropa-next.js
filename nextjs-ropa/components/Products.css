@@ -1,9 +1,104 @@
+/* Estilo para el contenedor de productos */
 .ofert {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px;
+}
+
+/* Estilo para cada producto */
+.ofert-1 {
+  flex-basis: calc(32% - 10px);
+  background-color: #F5F5F5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transición para el fondo */
+}
+
+/* Estilo para la imagen */
+.ofert-1 .ofert-img img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  filter: grayscale(0%); /* Inicialmente en color */
+  transition: filter 0.3s ease; /* Transición para el efecto de blanco y negro */
+}
+
+/* Estilo para el enlace de compra */
+.ofert-1 .btn-2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 11px 15px;
+  font-size: 17px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Transición para la aparición y cambio de color */
+}
+
+/* Mostrar el enlace de compra y aplicar efecto de blanco y negro al pasar el cursor sobre la imagen */
+.ofert-1:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ofert-1:hover .btn-2 {
+  display: block;
+  opacity: 1;
+  color: black; /* Cambia el color del texto a negro al pasar el cursor */
+}
+
+.ofert-1:hover .ofert-img img {
+  filter: grayscale(100%); /* Convierte la imagen en blanco y negro al pasar el cursor */
+}
+
+/* Cambia el color del texto a blanco al pasar el cursor */
+.ofert-1:hover .ofert-text h3 {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FORMA BLANCO Y NEGRO PRIMERO */
+/* .ofert {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
-    margin: 30px;
+    margin: 20px;
   }
   
   .ofert-1 {
@@ -14,64 +109,50 @@
     box-sizing: border-box;
     text-align: center;
     padding: 10px;
-    position: relative; /* Agrega posición relativa para elementos hijos posicionados absolutamente */
-    overflow: hidden; /* Oculta elementos hijos que se posicionan absolutamente fuera de este contenedor */
-    transition: transform 0.3s ease; /* Agrega una animación de transición */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
-  /* Estilo para el enlace de compra */
-  .ofert-1 .btn-2 {
-    display: none; /* Oculta inicialmente el enlace de compra */
-    position: absolute;
-    bottom: 10px; /* Ajusta la posición vertical según tus preferencias */
-    left: 50%;
-    transform: translateX(-50%); /* Centra horizontalmente el enlace */
-  }
-  
-  /* Mostrar el enlace de compra cuando el cursor pasa sobre el contenedor */
-  .ofert-1:hover {
-    transform: scale(1.05); /* Escala el contenedor en un 5% al pasar el cursor */
-  }
-  
-  .ofert-1:hover .btn-2 {
-    display: block; /* Muestra el enlace de compra al pasar el cursor */
-  }
-  
-  .ofert-img {
-    text-align: center;
-  }
-  
-  .ofert-img img {
+  .ofert-1 .ofert-img img {
     max-width: 100%;
     height: auto;
     max-height: 200px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
   }
   
-  .ofert-text {
-    padding: 0;
-  }
-  
-  .ofert-text h3 {
-    color: black;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-  }
-  
-  .btn-2 {
-    display: inline-block;
-    padding: 5px 8px;
+  .ofert-1 .btn-2 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: black;
     color: white;
     border-radius: 5px;
-    font-size: 12px;
+    padding: 11px 15px;
+    font-size: 17px;
     text-decoration: none;
-    transition: opacity 0.3s ease; /* Agrega una transición para suavizar la aparición/desaparición */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
   
-  /* Suavizar la aparición/desaparición del enlace de compra */
+  .ofert-1:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
   .ofert-1:hover .btn-2 {
+    display: block;
     opacity: 1;
   }
   
+  .ofert-1:hover .ofert-img img {
+    filter: grayscale(0%);
+  }
+  
+  .ofert-1:hover .btn-2 {
+    color: black;
+  }
+   */

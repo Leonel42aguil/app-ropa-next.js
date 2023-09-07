@@ -22,14 +22,14 @@ export default function MyCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://i.pinimg.com/474x/c2/a2/96/c2a2965df82fa8f3ac2e01c4076d2d15.jpg"
+          src="/image/modelo.jpg"
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://th.bing.com/th/id/R.c0cfd02afa484b8556c9469581da66ad?rik=oyJZwYgfAYgrQw&pid=ImgRaw&r=0"
+          src="/image/home-puma.jpg"
           alt="Third slide"
         />
       </Carousel.Item>

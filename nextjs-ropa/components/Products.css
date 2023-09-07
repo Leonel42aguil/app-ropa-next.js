@@ -4,7 +4,7 @@
     display: flex; /* Usa flexbox para alinear los productos en una sola línea */
     justify-content: space-between; /* Distribuye los productos de manera uniforme */
     flex-wrap: wrap; /* Permite que los productos se ajusten automáticamente a la línea */
-    gap: 1.5cm; /* Espacio entre los productos */
+    gap: 1cm;  /* Espacio entre los productos */
 }
 
 /* Estilo para cada oferta individual */
@@ -21,34 +21,33 @@
 /* Estilo para la imagen de la oferta */
 .ofert-img {
     text-align: center; /* Centra la imagen horizontalmente */
-    padding: 15px; /* Espaciado interno uniforme */
 }
 
 .ofert-img img {
     max-width: 100%; /* Asegura que la imagen se ajuste al recuadro */
     height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 200px; /* Establece una altura máxima para la imagen */
 }
 
-/* Estilo para el texto de la oferta */
 .ofert-text {
-    padding: 15px; /* Espaciado interno uniforme */
+    padding: 0; 
 }
 
 .ofert-text h3 {
     color: black;
     font-family: 'Oswald', sans-serif;
-    font-size: 25px;
+    font-size: 20px; /* Reduce el tamaño del texto */
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduce el margen inferior */
 }
 
 /* Estilo para el botón */
 .btn-2 {
     display: inline-block;
-    padding: 7px 10px;
+    padding: 5px 8px; /* Reduce el padding del botón */
     background-color: black;
     color: white;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 12px; /* Reduce el tamaño del texto del botón */
     text-decoration: none; /* Evita subrayado enlaces */
 }

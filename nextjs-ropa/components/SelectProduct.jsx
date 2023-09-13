@@ -56,7 +56,7 @@ const SelectProduct = () => {
           </div>
           <div className="item">
             <span className="titulo-item">Middlesteel</span>
-            <img src="/image/img/middlesteel.png" alt="" className="img-item" />
+            <img src="/image/img//middlesteel.png" alt="" className="img-item" />
             <span className="precio-item">$42.800</span>
             <button className="boton-item">Agregar al Carrito</button>
           </div>

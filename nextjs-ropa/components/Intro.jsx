@@ -15,5 +15,4 @@ const Intro = () => {
     </section>
   );
 };
-
 export default Intro;

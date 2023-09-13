@@ -8,6 +8,7 @@ import Product from "@/components/Product";
 import About from "@/components/About";
 import Formulario from "@/components/Formulario";
 import Footer from "@/components/Footer";
+import SelectProduct from "@/components/SelectProduct";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
         <Carrusel />
         <Intro />
         <Product />
+        <SelectProduct />
         <About />
         {/* <Formulario /> */}
         {/* <Footer /> */}

@@ -46,6 +46,7 @@ export default function Product() {
       <div className={`ofert-1 ${activeCard === 'cintos' ? 'active' : ''}`}>
         <div className="ofert-product">
           <div className="ofert-img">
+            {/* <img src="/image/f1.png" alt="product1" /> */}
             <img src="/image/f1.png" alt="product1" />
           </div>
           <div className="ofert-text">

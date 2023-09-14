@@ -5,6 +5,7 @@ import "../app/css/slider.css";
 import "../app/css/style.css";
 import "./Products.css";
 import React, { useState } from "react";
+import "./SelectProduct.css"
 
 export default function Product() {
   const [index, setIndex] = useState(0);
@@ -46,7 +47,6 @@ export default function Product() {
       <div className={`ofert-1 ${activeCard === 'cintos' ? 'active' : ''}`}>
         <div className="ofert-product">
           <div className="ofert-img">
-            {/* <img src="/image/f1.png" alt="product1" /> */}
             <img src="/image/f1.png" alt="product1" />
           </div>
           <div className="ofert-text">
@@ -130,11 +130,65 @@ export default function Product() {
       
       {/* Tarjetas de detalles */}
       {activeCard === 'cintos' && (
-        <div className="ofert-1">
-          <div className="ofert-card">
-            <p>Detalles de Cintos</p>
+        <section className="contenedor">
+        {/* Contenedor de elementos */}
+        <div className="contenedor-items">
+          <div className="item">
+            <span className="titulo-item">Box Engasse</span>
+            <img src="/image/img/boxengasse.png" alt="" className="img-item" />
+            <span className="precio-item">$15.000</span>
+            <button className="boton-item">Agregar al Carrito</button>
+          </div>
+          <div className="item">
+            <span className="titulo-item">English Horse</span>
+            <img src="/image/img/englishrose.png" alt="" className="img-item" />
+            <span className="precio-item">$25.000</span>
+            <button className="boton-item">Agregar al Carrito</button>
+          </div>
+          <div className="item">
+            <span className="titulo-item">Knock Nap</span>
+            <img src="/image/img/knocknap.png" alt="" className="img-item" />
+            <span className="precio-item">$35.000</span>
+            <button className="boton-item">Agregar al Carrito</button>
+          </div>
+          <div className="item">
+            <span className="titulo-item">La Night</span>
+            <img src="/image/img/lanight.png" alt="" className="img-item" />
+            <span className="precio-item">$18.000</span>
+            <button className="boton-item">Agregar al Carrito</button>
+          </div>
+          <div className="item">
+            <span className="titulo-item">Silver All</span>
+            <img src="/image/img/silverall.png" alt="" className="img-item" />
+            <span className="precio-item">$32.000</span>
+            <button className="boton-item">Agregar al Carrito</button>
+          </div>
+          <div className="item">
+            <span className="titulo-item">Skin Glam</span>
+            <img src="/image/img/skinglam.png" alt="" className="img-item" />
+            <span className="precio-item">$18.000</span>
+            <button className="boton-item">Agregar al Carrito</button>
+          </div>
+          <div className="item">
+            <span className="titulo-item">Midimix</span>
+            <img src="/image/img/midimix.png" alt="" className="img-item" />
+            <span className="precio-item">$54.000</span>
+            <button className="boton-item">Agregar al Carrito</button>
+          </div>
+          <div className="item">
+            <span className="titulo-item">Sir Blue</span>
+            <img src="/image/img/sirblue.png" alt="" className="img-item" />
+            <span className="precio-item">$32.000</span>
+            <button className="boton-item">Agregar al Carrito</button>
+          </div>
+          <div className="item">
+            <span className="titulo-item">Middlesteel</span>
+            <img src="/image/img//middlesteel.png" alt="" className="img-item" />
+            <span className="precio-item">$42.800</span>
+            <button className="boton-item">Agregar al Carrito</button>
           </div>
         </div>
+        </section>
       )}
 
       {activeCard === 'calzados' && (

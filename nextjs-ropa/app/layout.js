@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         <Carrusel />
         <Intro />
         <Product />
-        <SelectProduct />
+        {/* <SelectProduct /> */}
         <About />
         {/* <Formulario /> */}
         {/* <Footer /> */}

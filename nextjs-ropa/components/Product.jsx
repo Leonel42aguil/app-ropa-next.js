@@ -8,496 +8,136 @@ import React, { useState } from "react";
 import "./SelectProduct.css"
 
 export default function Product() {
-  const [index, setIndex] = useState(0);
+  const products = [
+    {
+      name: 'Cintos',
+      imgSrc: '/image/f1.png',
+      details: [
+        { name: 'Box Engasse', imgSrc: '/image/img/boxengasse.png', price: '$15.000' },
+        { name: 'English Horse', imgSrc: '/image/img/englishrose.png', price: '$25.000' },
+        { name: 'Knock Nap', imgSrc: '/image/img/knocknap.png', price: '$35.000' },
+        { name: 'La Night', imgSrc: '/image/img/lanight.png', price: '$18.000' },
+        { name: 'Silver All', imgSrc: '/image/img/silverall.png', price: '$32.000' },
+        { name: 'Skin Glam', imgSrc: '/image/img/skinglam.png', price: '$18.000' },
+        { name: 'Midimix', imgSrc: '/image/img/midimix.png', price: '$54.000' },
+        { name: 'Sir Blue', imgSrc: '/image/img/sirblue.png', price: '$32.000' },
+        { name: 'Middlesteel', imgSrc: '/image/img/middlesteel.png', price: '$42.800' },
+      ],
+    },
+    {
+      name: 'Calzados',
+      imgSrc: '/image/f2.png',
+      details: [
+        { name: 'Box Engasse', imgSrc: '/image/img/boxengasse.png', price: '$15.000' },
+        { name: 'English Horse', imgSrc: '/image/img/englishrose.png', price: '$25.000' },
+        { name: 'Knock Nap', imgSrc: '/image/img/knocknap.png', price: '$35.000' },
+        { name: 'La Night', imgSrc: '/image/img/lanight.png', price: '$18.000' },
+        { name: 'Silver All', imgSrc: '/image/img/silverall.png', price: '$32.000' },
+        { name: 'Skin Glam', imgSrc: '/image/img/skinglam.png', price: '$18.000' },
+        { name: 'Midimix', imgSrc: '/image/img/midimix.png', price: '$54.000' },
+        { name: 'Sir Blue', imgSrc: '/image/img/sirblue.png', price: '$32.000' },
+        { name: 'Middlesteel', imgSrc: '/image/img/middlesteel.png', price: '$42.800' },
+      ],
+    },
+    {
+      name: 'Carteras',
+      imgSrc: '/image/f3.png',
+      details: [
+        { name: 'Box Engasse', imgSrc: '/image/img/boxengasse.png', price: '$15.000' },
+        { name: 'English Horse', imgSrc: '/image/img/englishrose.png', price: '$25.000' },
+        { name: 'Knock Nap', imgSrc: '/image/img/knocknap.png', price: '$35.000' },
+        { name: 'La Night', imgSrc: '/image/img/lanight.png', price: '$18.000' },
+        { name: 'Silver All', imgSrc: '/image/img/silverall.png', price: '$32.000' },
+        { name: 'Skin Glam', imgSrc: '/image/img/skinglam.png', price: '$18.000' },
+        { name: 'Midimix', imgSrc: '/image/img/midimix.png', price: '$54.000' },
+        { name: 'Sir Blue', imgSrc: '/image/img/sirblue.png', price: '$32.000' },
+        { name: 'Middlesteel', imgSrc: '/image/img/middlesteel.png', price: '$42.800' },
+      ],
+    },
+    {
+      name: 'Camisas',
+      imgSrc: '/image/4.png',
+      details: [
+        { name: 'Box Engasse', imgSrc: '/image/img/boxengasse.png', price: '$15.000' },
+        { name: 'English Horse', imgSrc: '/image/img/englishrose.png', price: '$25.000' },
+        { name: 'Knock Nap', imgSrc: '/image/img/knocknap.png', price: '$35.000' },
+        { name: 'La Night', imgSrc: '/image/img/lanight.png', price: '$18.000' },
+        { name: 'Silver All', imgSrc: '/image/img/silverall.png', price: '$32.000' },
+        { name: 'Skin Glam', imgSrc: '/image/img/skinglam.png', price: '$18.000' },
+        { name: 'Midimix', imgSrc: '/image/img/midimix.png', price: '$54.000' },
+        { name: 'Sir Blue', imgSrc: '/image/img/sirblue.png', price: '$32.000' },
+        { name: 'Middlesteel', imgSrc: '/image/img/middlesteel.png', price: '$42.800' },
+      ],
+    },
+    {
+      name: 'Camperas',
+      imgSrc: '/image/5.png',
+      details: [
+        { name: 'Box Engasse', imgSrc: '/image/img/boxengasse.png', price: '$15.000' },
+        { name: 'English Horse', imgSrc: '/image/img/englishrose.png', price: '$25.000' },
+        { name: 'Knock Nap', imgSrc: '/image/img/knocknap.png', price: '$35.000' },
+        { name: 'La Night', imgSrc: '/image/img/lanight.png', price: '$18.000' },
+        { name: 'Silver All', imgSrc: '/image/img/silverall.png', price: '$32.000' },
+        { name: 'Skin Glam', imgSrc: '/image/img/skinglam.png', price: '$18.000' },
+        { name: 'Midimix', imgSrc: '/image/img/midimix.png', price: '$54.000' },
+        { name: 'Sir Blue', imgSrc: '/image/img/sirblue.png', price: '$32.000' },
+        { name: 'Middlesteel', imgSrc: '/image/img/middlesteel.png', price: '$42.800' },
+      ],
+    },
+    {
+      name: 'Buzos',
+      imgSrc: '/image/6.png',
+      details: [
+        { name: 'Box Engasse', imgSrc: '/image/img/boxengasse.png', price: '$15.000' },
+        { name: 'English Horse', imgSrc: '/image/img/englishrose.png', price: '$25.000' },
+        { name: 'Knock Nap', imgSrc: '/image/img/knocknap.png', price: '$35.000' },
+        { name: 'La Night', imgSrc: '/image/img/lanight.png', price: '$18.000' },
+        { name: 'Silver All', imgSrc: '/image/img/silverall.png', price: '$32.000' },
+        { name: 'Skin Glam', imgSrc: '/image/img/skinglam.png', price: '$18.000' },
+        { name: 'Midimix', imgSrc: '/image/img/midimix.png', price: '$54.000' },
+        { name: 'Sir Blue', imgSrc: '/image/img/sirblue.png', price: '$32.000' },
+        { name: 'Middlesteel', imgSrc: '/image/img/middlesteel.png', price: '$42.800' },
+      ],
+    },
+  ];
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
-  
-  const [showCards, setShowCards] = useState({
-    cintos: false,
-    calzados: false,
-    carteras: false,
-    camisas: false,
-    camperas: false,
-    buzos: false,
-  });
+  const [activeProduct, setActiveProduct] = useState(null);
 
-  const toggleCards = (product) => {
-    // Oculta todas las tarjetas
-    setShowCards({
-      cintos: false,
-      calzados: false,
-      carteras: false,
-      camisas: false,
-      camperas: false,
-      buzos: false,
-      [product]: true, // Muestra la tarjeta del producto clicado
-    });
-  };
-
-  const [activeCard, setActiveCard] = useState(null);
-
-  const toggleCard = (product) => {
-    setActiveCard(product === activeCard ? null : product);
+  const toggleProduct = (product) => {
+    setActiveProduct(product === activeProduct ? null : product);
   };
 
   return (
     <section className="ofert">
-      <div className={`ofert-1 ${activeCard === 'cintos' ? 'active' : ''}`}>
-        <div className="ofert-product">
-          <div className="ofert-img">
-            <img src="/image/f1.png" alt="product1" />
-          </div>
-          <div className="ofert-text">
-            <h3>Cintos</h3>
-            <button className="btn-2" onClick={() => toggleCard('cintos')}>
-              Comprar
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div className={`ofert-1 ${activeCard === 'calzados' ? 'active' : ''}`}>
-        <div className="ofert-product">
-          <div className="ofert-img">
-            <img src="/image/f2.png" alt="product2" />
-          </div>
-          <div className="ofert-text">
-            <h3>Calzados</h3>
-            <button className="btn-2" onClick={() => toggleCard('calzados')}>
-              Comprar
-            </button>
+      {products.map((product) => (
+        <div key={product.name} className={`ofert-1 ${activeProduct === product.name ? 'active' : ''}`}>
+          <div className="ofert-product">
+            <div className="ofert-img">
+              <img src={product.imgSrc} alt={`product-${product.name}`} />
+            </div>
+            <div className="ofert-text">
+              <h3>{product.name}</h3>
+              <button className="btn-2" onClick={() => toggleProduct(product.name)}>
+                Comprar
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className={`ofert-1 ${activeCard === 'carteras' ? 'active' : ''}`}>
-        <div className="ofert-product">
-          <div className="ofert-img">
-            <img src="/image/f3.png" alt="product3" />
-          </div>
-          <div className="ofert-text">
-            <h3>Carteras</h3>
-            <button className="btn-2" onClick={() => toggleCard('carteras')}>
-              Comprar
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div className={`ofert-1 ${activeCard === 'camisas' ? 'active' : ''}`}>
-        <div className="ofert-product">
-          <div className="ofert-img">
-            <img src="/image/4.png" alt="product4" />
-          </div>
-          <div className="ofert-text">
-            <h3>Camisas</h3>
-            <button className="btn-2" onClick={() => toggleCard('camisas')}>
-              Comprar
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div className={`ofert-1 ${activeCard === 'camperas' ? 'active' : ''}`}>
-        <div className="ofert-product">
-          <div className="ofert-img">
-            <img src="/image/5.png" alt="product5" />
-          </div>
-          <div className="ofert-text">
-            <h3>Camperas</h3>
-            <button className="btn-2" onClick={() => toggleCard('camperas')}>
-              Comprar
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div className={`ofert-1 ${activeCard === 'buzos' ? 'active' : ''}`}>
-        <div className="ofert-product">
-          <div className="ofert-img">
-            <img src="/image/6.png" alt="product6" />
-          </div>
-          <div className="ofert-text">
-            <h3>Buzos</h3>
-            <button className="btn-2" onClick={() => toggleCard('buzos')}>
-              Comprar
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      {/* Tarjetas de detalles */}
-      {activeCard === 'cintos' && (
+      ))}
+      {activeProduct && (
         <section className="contenedor">
-        {/* Contenedor de elementos */}
-        <div className="contenedor-items">
-          <div className="item">
-            <span className="titulo-item">Box Engasse</span>
-            <img src="/image/img/boxengasse.png" alt="" className="img-item" />
-            <span className="precio-item">$15.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
+          <div className="contenedor-items">
+            {products
+              .find((product) => product.name === activeProduct)
+              .details.map((detail) => (
+                <div key={detail.name} className="item">
+                  <span className="titulo-item">{detail.name}</span>
+                  <img src={detail.imgSrc} alt={`detail-${detail.name}`} className="img-item" />
+                  <span className="precio-item">{detail.price}</span>
+                  <button className="boton-item">Agregar al Carrito</button>
+                </div>
+              ))}
           </div>
-          <div className="item">
-            <span className="titulo-item">English Horse</span>
-            <img src="/image/img/englishrose.png" alt="" className="img-item" />
-            <span className="precio-item">$25.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Knock Nap</span>
-            <img src="/image/img/knocknap.png" alt="" className="img-item" />
-            <span className="precio-item">$35.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">La Night</span>
-            <img src="/image/img/lanight.png" alt="" className="img-item" />
-            <span className="precio-item">$18.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Silver All</span>
-            <img src="/image/img/silverall.png" alt="" className="img-item" />
-            <span className="precio-item">$32.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Skin Glam</span>
-            <img src="/image/img/skinglam.png" alt="" className="img-item" />
-            <span className="precio-item">$18.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Midimix</span>
-            <img src="/image/img/midimix.png" alt="" className="img-item" />
-            <span className="precio-item">$54.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Sir Blue</span>
-            <img src="/image/img/sirblue.png" alt="" className="img-item" />
-            <span className="precio-item">$32.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Middlesteel</span>
-            <img src="/image/img//middlesteel.png" alt="" className="img-item" />
-            <span className="precio-item">$42.800</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-        </div>
-        </section>
-      )}
-
-      {activeCard === 'calzados' && (
-        <section className="contenedor">
-        {/* Contenedor de elementos */}
-        <div className="contenedor-items">
-          <div className="item">
-            <span className="titulo-item">Box Engasse</span>
-            <img src="/image/img/boxengasse.png" alt="" className="img-item" />
-            <span className="precio-item">$15.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">English Horse</span>
-            <img src="/image/img/englishrose.png" alt="" className="img-item" />
-            <span className="precio-item">$25.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Knock Nap</span>
-            <img src="/image/img/knocknap.png" alt="" className="img-item" />
-            <span className="precio-item">$35.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">La Night</span>
-            <img src="/image/img/lanight.png" alt="" className="img-item" />
-            <span className="precio-item">$18.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Silver All</span>
-            <img src="/image/img/silverall.png" alt="" className="img-item" />
-            <span className="precio-item">$32.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Skin Glam</span>
-            <img src="/image/img/skinglam.png" alt="" className="img-item" />
-            <span className="precio-item">$18.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Midimix</span>
-            <img src="/image/img/midimix.png" alt="" className="img-item" />
-            <span className="precio-item">$54.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Sir Blue</span>
-            <img src="/image/img/sirblue.png" alt="" className="img-item" />
-            <span className="precio-item">$32.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Middlesteel</span>
-            <img src="/image/img//middlesteel.png" alt="" className="img-item" />
-            <span className="precio-item">$42.800</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-        </div>
-        </section>
-      )}
-
-      {activeCard === 'carteras' && (
-        <section className="contenedor">
-        {/* Contenedor de elementos */}
-        <div className="contenedor-items">
-          <div className="item">
-            <span className="titulo-item">Box Engasse</span>
-            <img src="/image/img/boxengasse.png" alt="" className="img-item" />
-            <span className="precio-item">$15.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">English Horse</span>
-            <img src="/image/img/englishrose.png" alt="" className="img-item" />
-            <span className="precio-item">$25.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Knock Nap</span>
-            <img src="/image/img/knocknap.png" alt="" className="img-item" />
-            <span className="precio-item">$35.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">La Night</span>
-            <img src="/image/img/lanight.png" alt="" className="img-item" />
-            <span className="precio-item">$18.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Silver All</span>
-            <img src="/image/img/silverall.png" alt="" className="img-item" />
-            <span className="precio-item">$32.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Skin Glam</span>
-            <img src="/image/img/skinglam.png" alt="" className="img-item" />
-            <span className="precio-item">$18.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Midimix</span>
-            <img src="/image/img/midimix.png" alt="" className="img-item" />
-            <span className="precio-item">$54.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Sir Blue</span>
-            <img src="/image/img/sirblue.png" alt="" className="img-item" />
-            <span className="precio-item">$32.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Middlesteel</span>
-            <img src="/image/img//middlesteel.png" alt="" className="img-item" />
-            <span className="precio-item">$42.800</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-        </div>
-        </section>
-      )}
-
-      {activeCard === 'camisas' && (
-       <section className="contenedor">
-       {/* Contenedor de elementos */}
-       <div className="contenedor-items">
-         <div className="item">
-           <span className="titulo-item">Box Engasse</span>
-           <img src="/image/img/boxengasse.png" alt="" className="img-item" />
-           <span className="precio-item">$15.000</span>
-           <button className="boton-item">Agregar al Carrito</button>
-         </div>
-         <div className="item">
-           <span className="titulo-item">English Horse</span>
-           <img src="/image/img/englishrose.png" alt="" className="img-item" />
-           <span className="precio-item">$25.000</span>
-           <button className="boton-item">Agregar al Carrito</button>
-         </div>
-         <div className="item">
-           <span className="titulo-item">Knock Nap</span>
-           <img src="/image/img/knocknap.png" alt="" className="img-item" />
-           <span className="precio-item">$35.000</span>
-           <button className="boton-item">Agregar al Carrito</button>
-         </div>
-         <div className="item">
-           <span className="titulo-item">La Night</span>
-           <img src="/image/img/lanight.png" alt="" className="img-item" />
-           <span className="precio-item">$18.000</span>
-           <button className="boton-item">Agregar al Carrito</button>
-         </div>
-         <div className="item">
-           <span className="titulo-item">Silver All</span>
-           <img src="/image/img/silverall.png" alt="" className="img-item" />
-           <span className="precio-item">$32.000</span>
-           <button className="boton-item">Agregar al Carrito</button>
-         </div>
-         <div className="item">
-           <span className="titulo-item">Skin Glam</span>
-           <img src="/image/img/skinglam.png" alt="" className="img-item" />
-           <span className="precio-item">$18.000</span>
-           <button className="boton-item">Agregar al Carrito</button>
-         </div>
-         <div className="item">
-           <span className="titulo-item">Midimix</span>
-           <img src="/image/img/midimix.png" alt="" className="img-item" />
-           <span className="precio-item">$54.000</span>
-           <button className="boton-item">Agregar al Carrito</button>
-         </div>
-         <div className="item">
-           <span className="titulo-item">Sir Blue</span>
-           <img src="/image/img/sirblue.png" alt="" className="img-item" />
-           <span className="precio-item">$32.000</span>
-           <button className="boton-item">Agregar al Carrito</button>
-         </div>
-         <div className="item">
-           <span className="titulo-item">Middlesteel</span>
-           <img src="/image/img//middlesteel.png" alt="" className="img-item" />
-           <span className="precio-item">$42.800</span>
-           <button className="boton-item">Agregar al Carrito</button>
-         </div>
-       </div>
-       </section>
-      )}
-
-      {activeCard === 'camperas' && (
-        <section className="contenedor">
-        {/* Contenedor de elementos */}
-        <div className="contenedor-items">
-          <div className="item">
-            <span className="titulo-item">Box Engasse</span>
-            <img src="/image/img/boxengasse.png" alt="" className="img-item" />
-            <span className="precio-item">$15.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">English Horse</span>
-            <img src="/image/img/englishrose.png" alt="" className="img-item" />
-            <span className="precio-item">$25.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Knock Nap</span>
-            <img src="/image/img/knocknap.png" alt="" className="img-item" />
-            <span className="precio-item">$35.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">La Night</span>
-            <img src="/image/img/lanight.png" alt="" className="img-item" />
-            <span className="precio-item">$18.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Silver All</span>
-            <img src="/image/img/silverall.png" alt="" className="img-item" />
-            <span className="precio-item">$32.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Skin Glam</span>
-            <img src="/image/img/skinglam.png" alt="" className="img-item" />
-            <span className="precio-item">$18.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Midimix</span>
-            <img src="/image/img/midimix.png" alt="" className="img-item" />
-            <span className="precio-item">$54.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Sir Blue</span>
-            <img src="/image/img/sirblue.png" alt="" className="img-item" />
-            <span className="precio-item">$32.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Middlesteel</span>
-            <img src="/image/img//middlesteel.png" alt="" className="img-item" />
-            <span className="precio-item">$42.800</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-        </div>
-        </section>
-      )}
-
-      {activeCard === 'buzos' && (
-        <section className="contenedor">
-        {/* Contenedor de elementos */}
-        <div className="contenedor-items">
-          <div className="item">
-            <span className="titulo-item">Box Engasse</span>
-            <img src="/image/img/boxengasse.png" alt="" className="img-item" />
-            <span className="precio-item">$15.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">English Horse</span>
-            <img src="/image/img/englishrose.png" alt="" className="img-item" />
-            <span className="precio-item">$25.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Knock Nap</span>
-            <img src="/image/img/knocknap.png" alt="" className="img-item" />
-            <span className="precio-item">$35.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">La Night</span>
-            <img src="/image/img/lanight.png" alt="" className="img-item" />
-            <span className="precio-item">$18.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Silver All</span>
-            <img src="/image/img/silverall.png" alt="" className="img-item" />
-            <span className="precio-item">$32.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Skin Glam</span>
-            <img src="/image/img/skinglam.png" alt="" className="img-item" />
-            <span className="precio-item">$18.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Midimix</span>
-            <img src="/image/img/midimix.png" alt="" className="img-item" />
-            <span className="precio-item">$54.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Sir Blue</span>
-            <img src="/image/img/sirblue.png" alt="" className="img-item" />
-            <span className="precio-item">$32.000</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-          <div className="item">
-            <span className="titulo-item">Middlesteel</span>
-            <img src="/image/img//middlesteel.png" alt="" className="img-item" />
-            <span className="precio-item">$42.800</span>
-            <button className="boton-item">Agregar al Carrito</button>
-          </div>
-        </div>
         </section>
       )}
     </section>
